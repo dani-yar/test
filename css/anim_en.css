@@ -1,0 +1,113 @@
+* {
+  font-family: "Roboto Mono", monospace !important;
+}
+
+/* "Hello" text animation */
+.a_hello {
+    position: relative;
+    top: 50%;  
+    width: 30em;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);  
+  }
+  
+  .b_hello {
+    animation: typewriter 0.6s steps(7) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+  }
+
+  @keyframes typewriter{
+    from {
+        width: 0;
+    }
+    to {
+        width: 3.4em;
+    }
+  }
+
+  @keyframes blinkTextCursor{
+    from {
+        border-right-color: rgba(255,255,255,.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+  }
+
+
+  /* "My name is Daniyar" text animation */
+.a_name {
+    position: relative;
+    top: 50%;  
+    width: 30em;
+    font-size: 180%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);  
+  }
+  
+  .b_name {
+    animation: typewriter1 1.5s steps(20) 3s 1 normal both,
+    blinkTextCursor1 500ms steps(44) infinite normal;
+    animation-delay: 2s;
+  }
+
+  @keyframes typewriter1{
+    from {
+        width: 0;
+    }
+    to {
+        width: 11.7em;
+    }
+  }
+
+  @keyframes blinkTextCursor1{
+    from {
+        border-right-color: rgba(255,255,255,.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+  }
+
+
+  /* "WebDev" text animation */
+.a_iam {
+    position: relative;
+    top: 50%;  
+    width: 30em;
+    font-size: 180%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);  
+  }
+  
+  .b_iam {
+    animation: typewriter2 1.7s steps(25) 2s 1 normal both,
+    blinkTextCursor2 500ms steps(44) infinite normal;
+    animation-delay: 4s;
+  }
+
+  @keyframes typewriter2{
+    from {
+        width: 0;
+    }
+    to {
+        width: 12.5em;
+    }
+  }
+
+  @keyframes blinkTextCursor2{
+    from {
+        border-right-color: rgba(255,255,255,.75);
+    }
+    to {
+        border-right-color: #000;
+    }
+  }
